@@ -1,7 +1,16 @@
+@font-face {
+    font-family: 'Ringbearer';
+    src: url('font/ringm__0-webfont.eot?#iefix') format('embedded-opentype'), 
+	     url('font/ringm__0-webfont.woff') format('woff'), 
+	     url('font/ringm__0-webfont.ttf')  format('truetype'),
+	     url('font/ringm__0-webfont.svg#svgFontName') format('svg');
+}
+
 html {
     margin-left : auto;
     margin-right: auto;
-    background: #008800;
+    height: auto;
+    background: #E65116;
     /* Mozilla: */
     background: -moz-linear-gradient(top, #E65116, #000000);
     /* Chrome, Safari:*/
@@ -15,6 +24,7 @@ html {
 
 body {
     width : 960px;
+    height: auto; /* Necesario definir para tener un buen fondo en degradado en Firefox*/
     margin-left : auto;
     margin-right: auto;
     text-align: center; /* centrado del body en IE. Manya, se centra con text-align */
@@ -38,6 +48,7 @@ body {
 }
 
 #enlaces {
+    font-family: Ringbearer;
     position: relative;
     width: 960px;
     margin-top: -130px;
@@ -59,7 +70,7 @@ body {
     width: auto;
     padding: 2px 10px;
     color: #F8F8F8;
-    margin: 5px;
+    margin: 2px;
     display: inline;
     list-style: none;
 
