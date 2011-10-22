@@ -24,7 +24,8 @@ html {
 
 body {
     width : 960px;
-    height: auto; /* Necesario definir para tener un buen fondo en degradado en Firefox*/
+    height: auto;/* Necesario definir para tener un buen fondo en degradado en Firefox*/
+    
     margin-left : auto;
     margin-right: auto;
     text-align: center; /* centrado del body en IE. Manya, se centra con text-align */
