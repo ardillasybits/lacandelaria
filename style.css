@@ -6,44 +6,22 @@
 	     url('font/ringm__0-webfont.svg#svgFontName') format('svg');
 }
 
-html {
-    margin-left : auto;
-    margin-right: auto;
-    height: auto;
-    background: #E65116;
-    /* Mozilla: */
-    background: -moz-linear-gradient(top, #E65116, #000000);
-    /* Chrome, Safari:*/
-    background: -webkit-gradient(linear,
-                left top, left bottom, from(#E65116), to(#000000));
-    /* MSIE */
-    filter: progid:DXImageTransform.Microsoft.Gradient(
-                StartColorStr='#E65116', EndColorStr='#000000', GradientType=0);
+html { 
+    min-height: 100%;
 }
 
-
-body {
-    width : 960px;
-    height: auto;/* Necesario definir para tener un buen fondo en degradado en Firefox*/
-    
-    margin-left : auto;
-    margin-right: auto;
-    text-align: center; /* centrado del body en IE. Manya, se centra con text-align */
-    /* fondo y degradado*/
-    background: #008800;
-    /* Mozilla: */
-    background: -moz-linear-gradient(top, #E65116, #000000);
-    /* Chrome, Safari:*/
-    background: -webkit-gradient(linear,
-                left top, left bottom, from(#E65116), to(#000000));
-    /* MSIE */
-    filter: progid:DXImageTransform.Microsoft.Gradient(
-                StartColorStr='#E65116', EndColorStr='#000000', GradientType=0);
+body { 
+    text-align: center; /* manya, con esto se centra el bloque body */
+    background-image: -moz-linear-gradient(top, #E65116, #000000);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#E65116), to(#000000));
+    background-image: -webkit-linear-gradient(top, #E65116, #000000);
+    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#E65116', EndColorStr='#000000', GradientType=0)		
 }
 
 #mainflash {
     width: 960px;
-    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 0;
     padding: 0;
 }
@@ -60,6 +38,7 @@ body {
 }
 
 #enlaces ul {
+    position: relative;
     text-align: left;
     font-size: 13px;
     width: 960px;
@@ -86,7 +65,7 @@ body {
 
 #enlaces #relleno {
     background-color: transparent;
-    padding: 30px;
+    padding: 0 30px;
     
 }
 
