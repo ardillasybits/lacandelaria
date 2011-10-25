@@ -11,6 +11,7 @@ html {
 }
 
 body { 
+    color: #F8F8F8;
     text-align: center; /* manya, con esto se centra el bloque body */
     background-image: -moz-linear-gradient(top, #E65116, #000000);
     background-image: -webkit-gradient(linear, left top, left bottom, from(#E65116), to(#000000));
@@ -18,21 +19,63 @@ body {
     filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#E65116', EndColorStr='#000000', GradientType=0)		
 }
 
-#mainflash {
+#main { 
     width: 960px;
+    height: 550px;
+/*    position: relative*/
     margin-left: auto;
     margin-right: auto;
     z-index: 0;
     padding: 0;
+    background-image: url('./acc/image 11.png');
+}
+
+h1 { /* Titulo interior del bloque*/
+    font-size: 20px;
+    text-align: left;
+    color: #F8F8F8;
+    padding: 10px;
+/*    background-color: #0FF;*/
+}
+
+h4 { /* subtitulo interior del bloque*/
+    font-size: 16px;
+    text-align: left;
+    color: #c08e05;
+/*    background-color: #F0F;*/
+}
+
+#header { 
+/*    background-color: #FF0;*/
+    height: 50px
+    position: relative;
+    float: left;
+    margin-top: 130px;
+    margin-left: 220px;
+}
+
+#contenido {
+/*    position: relative;*/
+/*    background-color: red;*/
+    font-size: 14px;
+/*    position: relative;*/
+    float: left;
+    bottom: 0;
+    padding: 20px;
+    margin: 10px;
+    margin-right:480px;
+    width: 400px;
+/*    height: 300;*/
 }
 
 #enlaces {
     font-family: Ringbearer;
-    position: relative;
+    float: left;
     width: 960px;
-    margin-top: -130px; /*fix fondo blanco en FF*/
+/*    height: 20px;*/
     margin-left : auto;
     margin-right: auto;
+/*    margin-bottom: 0px;*/
     z-index: 1;
     
 }
@@ -43,7 +86,7 @@ body {
     font-size: 13px;
     width: 960px;
     padding: 8px;
-    margin-top: -30px;
+    margin-top: 30px;
     height: 20px;
 }
 
@@ -67,8 +110,4 @@ body {
     background-color: transparent;
     padding: 0 30px;
     
-}
-
-.pequeno {
-    font-size: 11px;
 }
