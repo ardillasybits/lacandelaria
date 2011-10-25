@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>sprite50</title>
+</head>
+<body>
+<canvas id="sprite50" width="16" height="16" style="border:2px solid #cccccc;"></canvas>
+<script src=".\sprite50\jaf.js"></script>
+<script>
+ST('sprite50', function(_f) {
+    _f.setFps(18);
+    _f.defaults.debug = false;
+    _f.loop = true;
+    // Create sprite: sprite45
+    var sprite45 = new movieclip('sprite45', 1, true);
+    var l0 = sprite45.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .shape('shape44', './sprite50/shape44.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 0, 0]);
+
+
+    // Create sprite: sprite46
+    var sprite46 = new movieclip('sprite46', 1, true);
+    var l0 = sprite46.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .sprite('sprite45', sprite45)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 0, 0]);
+
+
+    // Create sprite: sprite48
+    var sprite48 = new movieclip('sprite48', 1, true);
+    var l0 = sprite48.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .shape('shape47', './sprite50/shape47.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 0, 0]);
+
+
+    // Create sprite: mm
+    var mm = new movieclip('mm', 45, true);
+    var l0 = mm.layer('l0', 0);
+    var l1 = mm.layer('l1', 1);
+    l1.frameclip('t0', 19, 36, 1)
+    .sprite('sprite46', sprite46)
+    .track('mx')
+    .key(19, [1, 0, 0, 1, 5, 6])
+    .key(28, [1.67857, 0, 0, 1.67857, 3, 4])
+    .key(36, [1, 0, 0, 1, 5, 6]);
+
+    var l2 = mm.layer('l2', 2);
+    l2.frameclip('t0', 19, 36, 1)
+    .sprite('sprite48', sprite48)
+    .track('mx')
+    .key(19, [1, 0, 0, 1, 1, 2])
+    .key(22, [0.819153, 0.570892, -0.570892, 0.819153, 6, 0])
+    .key(24, [0.523117, 0.85054, -0.85054, 0.523117, 10, 0])
+    .key(28, [-0.25882, 0.965927, -0.965927, -0.25882, 15, 4])
+    .key(29, [-0.423035, 0.904602, -0.904602, -0.423035, 16, 5])
+    .key(32, [-0.821991, 0.56636, -0.56636, -0.821991, 16, 10])
+    .key(36, [-0.994125, -0.10347, 0.10347, -0.994125, 13, 15]);
+
+
+
+    _f.mc(mm);
+    _f.start();
+});
+</script>
+</body>
+</html>

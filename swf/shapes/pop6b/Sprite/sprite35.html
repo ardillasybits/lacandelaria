@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>sprite35</title>
+</head>
+<body>
+<canvas id="sprite35" width="999" height="1735" style="border:2px solid #cccccc;"></canvas>
+<script src=".\sprite35\jaf.js"></script>
+<script>
+ST('sprite35', function(_f) {
+    _f.setFps(18);
+    _f.defaults.debug = false;
+    _f.loop = true;
+    // Create sprite: sprite15
+    var sprite15 = new movieclip('sprite15', 1, true);
+    var l0 = sprite15.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .shape('shape14', './sprite35/shape14.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 0, 0]);
+
+
+    // Create sprite: sprite16
+    var sprite16 = new movieclip('sprite16', 35, true);
+    var l0 = sprite16.layer('l0', 0);
+    l0.frameclip('t0', 0, 34, 1)
+    .sprite('sprite15', sprite15)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 0, -578])
+    .key(34, [1, 0, 0, 1, 0, 592]);
+
+    var l1 = sprite16.layer('l1', 1);
+
+    // Create sprite: sprite19
+    var sprite19 = new movieclip('sprite19', 1, true);
+    var l0 = sprite19.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .shape('shape18', './sprite35/shape18.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 0, 0]);
+
+
+    // Create sprite: mm
+    var mm = new movieclip('mm', 14, true);
+    var l0 = mm.layer('l0', 0);
+    l0.frameclip('t0', 0, 13, 1)
+    .shape('shape12', './sprite35/shape12.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 20, 591])
+    .key(13, [1, 0, 0, 1, 20, 591]);
+
+    var l1 = mm.layer('l1', 1);
+    l1.frameclip('t0', 0, 13, 1)
+    .sprite('sprite16', sprite16)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 36, 578])
+    .key(13, [1, 0, 0, 1, 36, 578]);
+
+    var l2 = mm.layer('l2', 2);
+    l2.frameclip('t0', 0, 13, 1)
+    .shape('shape13', './sprite35/shape13.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 20, 591])
+    .key(13, [1, 0, 0, 1, 20, 591]);
+
+    var l3 = mm.layer('l3', 3);
+    l3.frameclip('t0', 0, 13, 1)
+    .sprite('sprite19', sprite19)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 362, 720])
+    .key(13, [1, 0, 0, 1, 222, 720]);
+
+    var l4 = mm.layer('l4', 4);
+    l4.frameclip('t0', 0, 13, 1)
+    .shape('shape20', './sprite35/shape20.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 20, 591])
+    .key(13, [1, 0, 0, 1, 20, 591]);
+
+    var l5 = mm.layer('l5', 5);
+    l5.frameclip('t0', 0, 13, 1)
+    .
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 669, 631])
+    .key(13, [1, 0, 0, 1, 669, 631]);
+
+    var l6 = mm.layer('l6', 6);
+    l6.frameclip('t0', 0, 13, 1)
+    .
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 755, 628])
+    .key(13, [1, 0, 0, 1, 755, 628]);
+
+    var l7 = mm.layer('l7', 7);
+    l7.frameclip('t0', 0, 13, 1)
+    .
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 825, 631])
+    .key(13, [1, 0, 0, 1, 825, 631]);
+
+    var l8 = mm.layer('l8', 8);
+    l8.frameclip('t0', 0, 13, 1)
+    .
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 912, 631])
+    .key(13, [1, 0, 0, 1, 912, 631]);
+
+    var l9 = mm.layer('l9', 9);
+
+
+    _f.mc(mm);
+    _f.start();
+});
+</script>
+</body>
+</html>

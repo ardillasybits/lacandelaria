@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>sprite46</title>
+</head>
+<body>
+<canvas id="sprite46" width="5" height="5" style="border:2px solid #cccccc;"></canvas>
+<script src=".\sprite46\jaf.js"></script>
+<script>
+ST('sprite46', function(_f) {
+    _f.setFps(18);
+    _f.defaults.debug = false;
+    _f.loop = true;
+    // Create sprite: sprite45
+    var sprite45 = new movieclip('sprite45', 1, true);
+    var l0 = sprite45.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .shape('shape44', './sprite46/shape44.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 0, 0]);
+
+
+    // Create sprite: mm
+    var mm = new movieclip('mm', 1, true);
+    var l0 = mm.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .sprite('sprite45', sprite45)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 0, 0]);
+
+
+
+    _f.mc(mm);
+    _f.start();
+});
+</script>
+</body>
+</html>
