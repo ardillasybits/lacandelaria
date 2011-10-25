@@ -12,16 +12,19 @@ html {
 
 body { 
     text-align: center; /* manya, con esto se centra el bloque body */
-    background-image: -moz-linear-gradient(top, #E65116, #000000);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#E65116), to(#000000));
-    background-image: -webkit-linear-gradient(top, #E65116, #000000);
-    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#E65116', EndColorStr='#000000', GradientType=0)		
+    background-image: -moz-linear-gradient(top, #772A0B, #000000);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#772A0B), to(#000000));
+    background-image: -webkit-linear-gradient(top, #772A0B, #000000);
+    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#772A0B', EndColorStr='#000000', GradientType=0)		
 }
 
 #mainflash {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
+    border-style: solid;
+    border-color: #99360F;
+    border-width:20px;
     z-index: 0;
     padding: 0;
 }
