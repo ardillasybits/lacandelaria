@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="550px" height="400px"
+xml:space="preserve">
+<g id="ShapeID_47" transform="matrix(1, 0, 0, 1, 0, 0)" >
+<path 
+style="fill:#FFFFFF;fill-opacity:1" d="M0.8 4.75C0.3 4.25 0 3.6 0 2.8C0 2.05 0.25 1.4 0.8 0.8C1.35 0.3 2 0 2.8 0C3.55 0 4.2 0.25 4.75 0.8C5.3 1.35 5.6 2 5.6 2.8C5.6 3.55 5.35 4.2 4.75 4.75C4.25 5.3 3.6 5.6 2.8 5.6C2.05 5.6 1.4 5.35 0.8 4.75" />
+</g>
+</svg>

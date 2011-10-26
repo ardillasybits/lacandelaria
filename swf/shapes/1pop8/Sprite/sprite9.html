@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>sprite9</title>
+</head>
+<body>
+<canvas id="sprite9" width="66" height="13" style="border:2px solid #cccccc;"></canvas>
+<script src=".\sprite9\jaf.js"></script>
+<script>
+ST('sprite9', function(_f) {
+    _f.setFps(18);
+    _f.defaults.debug = false;
+    _f.loop = true;
+    // Create sprite: mm
+    var mm = new movieclip('mm', 9, true);
+    var l0 = mm.layer('l0', 0);
+    l0.frameclip('t0', 0, 8, 1)
+    .shape('shape8', './sprite9/shape8.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 0, 0])
+    .key(8, [1, 0, 0, 1, 0, 0]);
+
+    var l1 = mm.layer('l1', 1);
+    l1.frameclip('t0', 0, 8, 1)
+    .shape('shape3', './sprite9/shape3.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [0.0130157, 0, 0, 0.0184631, 0, 0])
+    .key(2, [0.0130157, 0, 0, 0.0184631, 0, 0])
+    .key(3, [0.0130157, 0, 0, 0.0184631, 26, 0])
+    .key(5, [0.0130157, 0, 0, 0.0184631, 26, 0])
+    .key(6, [0.0130157, 0, 0, 0.0184631, 53, 0])
+    .key(8, [0.0130157, 0, 0, 0.0184631, 53, 0]);
+
+
+
+    _f.mc(mm);
+    _f.start();
+});
+</script>
+</body>
+</html>
