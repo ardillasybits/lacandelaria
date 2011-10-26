@@ -61,25 +61,36 @@ h4 { /* subtitulo interior del bloque*/
 /*    position: relative;*/
 /*    background-color: red;*/
     font-size: 14px;
-/*    position: relative;*/
     float: left;
     bottom: 0;
     padding: 20px;
     margin: 10px;
     margin-right:480px;
-    width: 400px;
+    width: 450px;
 /*    height: 300;*/
+    z-index: 1;
+}
+
+#contenido a {
+    background-color: #F8F8F8;
+    color: #000;
+    text-decoration: none;
+    padding: 4px;
+    margin: 10px;
 }
 
 #enlaces {
     font-family: Ringbearer;
-    float: left;
+/*    background-color: red;*/
+    position: relative;
+/*    float: left;*/
     width: 960px;
 /*    height: 20px;*/
     margin-left : auto;
     margin-right: auto;
-/*    margin-bottom: 0px;*/
-    z-index: 1;
+    bottom: -45px;
+    z-index: 2;
+    overflow: hidden;
     
 }
 
@@ -113,4 +124,8 @@ h4 { /* subtitulo interior del bloque*/
     background-color: transparent;
     padding: 0 30px;
     
+}
+
+#imagen {
+    margin: 10 25px;
 }
