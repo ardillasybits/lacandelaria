@@ -54,15 +54,13 @@ h4 { /* subtitulo interior del bloque*/
     height: 50px
     position: relative;
     float: left;
-    margin-top: 100px;
+    margin-top: 130px;
     margin-left: 220px;
-    margin-bottom: -50px;
 }
 
 #contenido {
 /*    position: relative;*/
 /*    background-color: red;*/
-    text-align: left;
     font-size: 14px;
     float: left;
     bottom: 0;
@@ -70,7 +68,7 @@ h4 { /* subtitulo interior del bloque*/
     margin: 10px;
     margin-right:480px;
     width: 450px;
-    height: 100px;
+/*    height: 300;*/
     z-index: 1;
 }
 
@@ -85,12 +83,6 @@ h4 { /* subtitulo interior del bloque*/
 	border-radius: 6px;
 }
 
-#comentarios {
-    float: right;
-    position: relative;
-    top: -150px;
-}
-
 #enlaces {
     font-family: Ringbearer;
 /*    background-color: red;*/
@@ -100,7 +92,7 @@ h4 { /* subtitulo interior del bloque*/
 /*    height: 20px;*/
     margin-left : auto;
     margin-right: auto;
-    bottom: -110px;
+    bottom: -20px;
     z-index: 2;
     overflow: hidden;
     
