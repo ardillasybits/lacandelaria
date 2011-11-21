@@ -60,6 +60,7 @@ h4 { /* subtitulo interior del bloque*/
 }
 
 #contenido {
+    font-family: 'Times New Roman', 'Times', Serif;
     position: relative;
 /*    background-color: red;*/
     text-align: left;

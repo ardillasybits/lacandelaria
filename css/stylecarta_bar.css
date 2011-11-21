@@ -30,7 +30,7 @@ body {
     margin-right: auto;
     z-index: 0;
     padding: 0;
-    background-image: url('bgreservas.png');
+    background-image: url('bgcarta_bar.png');
 }
 
 h1 { /* Titulo interior del bloque*/
@@ -39,8 +39,6 @@ h1 { /* Titulo interior del bloque*/
     text-align: left;
     color: #c08e05;
     padding: 10px;
-    padding-bottom: 0px;
-    margin: 10px 0 0 0;
 /*    background-color: #0FF;*/
 }
 
@@ -56,34 +54,53 @@ h4 { /* subtitulo interior del bloque*/
     height: 50px
     position: relative;
     float: left;
-    margin-top: 130px;
+    margin-top: 100px;
     margin-left: 220px;
 }
 
 #contenido {
-/*    position: relative;*/
-/*    background-color: red;*/
-    font-size: 14px;
+    position: relative;
     float: left;
-    text-align: center;
     bottom: 0;
     padding: 20px;
     padding-top: 0px;
-    position: relative;
     margin: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    left: -70px;
-    width: auto;
-    top: 200px;
-/*    height: 300;*/
+    margin-right:480px;
+    width: 450px;
+    text-align: left;
     z-index: 1;
+    height: 210px;
+    overflow: auto; 
+    overflow-x: hidden;
+}
+
+#contenido table {
+    width: 450px;
 }
 
 #contenido a {
     text-decoration: none;
-    color: #ff9900;
-    font-weight: bold;
+    padding: 4px;
+    margin: 10px;
+}
+
+#contenido table {
+    margin-left: 20px;
+    text-align: left;
+    width: 450px;
+/*    border: 1px solid white;*/
+/*    border-collapse: collapse;*/
+}
+
+#contenido td {
+    height: 25px;
+    width: 30px;
+/*    border: 1px solid white;*/
+}
+
+tr.descripcion {
+    font-size: 12px;
+    vertical-align: top;
 }
 
 #botones li {
@@ -91,20 +108,10 @@ h4 { /* subtitulo interior del bloque*/
 }
 
 #botones a {
-    background-color: #F8F8F8;
-    color: #000;
+    color: #ff9900;
+    font-weight: bold;
     text-decoration: none;
-    padding: 4px;
-    margin: 10px;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-}
-
-#texto {
-    height: 220px;
-    overflow-y: auto;
-    overflow-x: hidden;
+ 
 }
 
 #enlaces {
@@ -116,7 +123,7 @@ h4 { /* subtitulo interior del bloque*/
 /*    height: 20px;*/
     margin-left : auto;
     margin-right: auto;
-    bottom: -230px;
+    bottom: 10px;
     z-index: 2;
     overflow: hidden;
     

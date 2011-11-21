@@ -61,19 +61,23 @@ h4 { /* subtitulo interior del bloque*/
 #contenido {
     position: relative;
     float: left;
+    bottom: 0;
+    padding: 20px;
+    padding-top: 0px;
+    margin: 10px;
+    margin-right:480px;
+    width: 450px;
     text-align: left;
     z-index: 1;
+    height: 210px;
+    overflow: auto; 
+    overflow-x: hidden;
 }
 
 #contenido a {
-    background-color: #F8F8F8;
-    color: #000;
     text-decoration: none;
     padding: 4px;
     margin: 10px;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
 }
 
 #contenido table {
@@ -95,6 +99,16 @@ tr.descripcion {
     vertical-align: top;
 }
 
+#botones li {
+    display: inline;
+}
+
+#botones a {
+    color: #ff9900;
+    font-weight: bold;
+    text-decoration: none;
+ 
+}
 
 #enlaces {
     font-family: Ringbearer;

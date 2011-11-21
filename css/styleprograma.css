@@ -60,11 +60,19 @@ h4 { /* subtitulo interior del bloque*/
 
 #contenido {
 /*    position: relative;*/
-    float: left;
-    height: 280px;
-    overflow-y: scroll;
-/*    overflow-x: hidden;*/
+    font-size: 14px;
     text-align: left;
+    bottom: 0;
+    float: left;
+    height: 240px;
+    padding: 20px;
+    padding-top: 0px;
+    margin: 10px;
+    margin-right:480px;
+    width: 550px;
+    overflow-y: auto;
+/*    overflow-x: hidden;*/
+
 /*    width: 400px;*/
     z-index: 1;
 }
