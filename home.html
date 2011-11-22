@@ -3,9 +3,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>La Candelaria</title>
+<script type="text/javascript">
+function bigshow(url) 
+{
+ var width  = 750;
+ var height = 480;
+ var left   = (screen.width  - width)/2;
+ var top    = (screen.height - height)/2;
+ var params = 'width='+width+', height='+height;
+ params += ', top='+top+', left='+left;
+ params += ', directories=no';
+ params += ', location=no';
+ params += ', menubar=no';
+ params += ', resizable=no';
+ params += ', scrollbars=no';
+ params += ', status=no';
+ params += ', toolbar=no';
+ newwin=window.open(url,'windowname5', params);
+ if (window.focus) {newwin.focus()}
+ return false;
+}
+</script>
 </head>
 
-<body>
+<body onload="javascript: bigshow('popup.html')">
 
 
 <div id="mainflash">
