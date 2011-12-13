@@ -3,6 +3,27 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="./css/stylecontactenos.css">
 <title>La Candelaria</title>
+<script type="text/javascript">
+function popup(url) 
+{
+ var width  = 850;
+ var height = 1092;
+ var left   = (screen.width  - width)/2;
+ var top    = (screen.height - height)/2;
+ var params = 'width='+width+', height='+height;
+ params += ', top='+top+', left='+left;
+ params += ', directories=no';
+ params += ', location=no';
+ params += ', menubar=no';
+ params += ', resizable=no';
+ params += ', scrollbars=no';
+ params += ', status=no';
+ params += ', toolbar=no';
+ newwin=window.open(url,'windowname5', params);
+ if (window.focus) {newwin.focus()}
+ return false;
+}
+</script>
 </head>
 
 <body>
@@ -18,7 +39,7 @@
 
     <div id="contenido">
 ¿Cómo llegar?
-<a href='#'>ver plano de ubicación</a> <br> <br>             
+<a onClick="javascript:popup('comoLlegar.html');" href="#">ver plano de ubicación</a> <br> <br>             
         <form>
             Nombres y apellidos<br>
             <input type="text" name="nombre"><br>
