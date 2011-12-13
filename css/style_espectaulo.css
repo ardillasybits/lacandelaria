@@ -67,6 +67,7 @@ h4 { /* subtitulo interior del bloque*/
     padding: 20px;
     margin: 10px;
     margin-right:480px;
+    margin-bottom: 0px;
     width: 450px;
 /*    height: 300;*/
     z-index: 1;
